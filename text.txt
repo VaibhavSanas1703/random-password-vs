@@ -1,0 +1,1 @@
+<img src='./main/assets/images/svg/copy.svg' onClick='copyPassword()'>

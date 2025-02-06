@@ -1,0 +1,137 @@
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Lexend Deca",sans-serif;
+}
+
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: #101218;
+}
+
+h1,h2,h3,h4,p{
+     color: #111;
+}
+
+button,input{
+     outline: none;
+     border: 0;
+}
+
+.password-generator-container{
+     width: 450px;
+     max-width: 95%;
+     height: auto;
+     padding: 35px;
+     /* border: 1px solid rgba(0,0,0,0.5); */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 15px;
+     text-align: left;
+     border-radius: 10px;
+     background: transparent;
+     border: 1px solid rgba(255,255,255,0.1);
+}
+
+.top-heading{
+     width: 100%;
+     text-align: center;
+}
+
+.top-heading h1{
+     color: #fff;
+}
+
+.inputs-box{
+     width: 100%;
+     height: auto;
+}
+
+.inputs-box input,button{
+     width: 100%;
+     height: 50px;
+     padding: 0 13px;
+     margin: 5px 0;
+     font-size: 15.1px;
+     border-radius: 10px;
+     background: transparent;
+}
+
+.inputs-box input{
+     border: 1px solid rgba(255,255,255,0.1);
+     color: #fcfcfc;
+}
+
+.inputs-box button{
+     background: #4C3BCF;
+     color: #fcfcfc;
+     cursor: pointer;
+}
+
+.password-show{
+     width: 100%;
+     text-align: center;
+}
+
+.password-show p{
+     color: #777;
+}
+
+.password-show span{
+     display: inline-block;
+     margin: 15px 0;
+     color: springgreen;
+     font-size: 15px;
+}
+
+#showGeneratedPassword img{
+     vertical-align: middle;
+     margin-left: 2px;
+     padding: 7px;
+     background: #fff;
+     border-radius: 10px;
+     transition: all .5s;
+     cursor: pointer;
+}
+
+.notify-container{
+     position: absolute;
+     top: 20px;
+     left: -177px;
+     width: auto;
+     max-width: 95%;
+     height: auto;
+     padding: 5px 20px;
+     background: #f0f0f0;
+     border-radius: 50px;
+     user-select: none;
+     opacity: 0;
+     visibility: hidden;
+     transition: opacity .50s , visibility .50s, left .50s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.notify-container p{
+     margin: 10px 0;
+}
+
+.active-notify{
+     left: 20px;
+     opacity: 1;
+     visibility: visible;
+}
+
+.notify-container p img{
+     vertical-align: middle;
+}
+
+.notify-container p{
+     font-size: 15px;
+}
+
